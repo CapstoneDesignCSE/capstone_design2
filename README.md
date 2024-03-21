@@ -19,7 +19,21 @@ code for capstone design
 
 
 # References
+## Docs
+### 속도 측정
+- [X] [YOLOv8 객체 속도 측정 - Ultralystics](https://docs.ultralytics.com/ko/reference/solutions/speed_estimation/)
+- [X] [객체 속도 측정 - Roboflow](https://blog.roboflow.com/estimate-speed-computer-vision/)
+
+## SourceCode
+### 속도 측정
+- [X] [객체 속도 측정 - Roboflow 코랩 시뮬레이션](https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/how-to-estimate-vehicle-speed-with-computer-vision.ipynb?ref=blog.roboflow.com)
+
+
 ## Blog
 - [X] [YOLOv5 커스텀 데이터 학습 - M1 Mac, iphone](https://clap0107.tistory.com/7)
 - [X] [객체 탐지 데이터 셋](https://public.roboflow.com/object-detection)
-- [X] [YOLOv8 객체 속도 측정](https://docs.ultralytics.com/ko/reference/solutions/speed_estimation/)
+
+
+## Youtube
+### 속도 측정
+- [X] [객체 속도 측정 - Roboflow](https://youtu.be/uWP6UjDeZvY)
