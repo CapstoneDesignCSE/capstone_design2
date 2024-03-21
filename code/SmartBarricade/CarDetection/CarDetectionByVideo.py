@@ -3,14 +3,15 @@ import cvzone
 import pandas as pd
 from ultralytics import YOLO
 from vidgear.gears import CamGear
-from tracker import *
+from code.SmartBarricade.CarDetection.tracker import Tracker
+
 
 class CarDetectionByVideo:
     model = YOLO('../Model/yolov8s.pt')
 
     # 다운로드한 동영상 파일 경로
     # video_path = 'sample.mp4'
-    video_path = '../DataSet/sample.mp4'
+    video_path = '/Users/we/PycharmProjects/capstone_design2/code/DataSet/sample.mp4'
     # CamGear를 사용하여 동영상 스트리밍 시작
     stream = CamGear(source=video_path).start()
 
@@ -22,7 +23,7 @@ class CarDetectionByVideo:
     cv2.namedWindow('RGB')
     cv2.setMouseCallback('RGB', RGB)
 
-    my_file = open("../DataSet/coco.txt", "r")
+    my_file = open("/Users/we/PycharmProjects/capstone_design2/code/DataSet/coco.txt", "r")
     data = my_file.read()
     class_list = data.split("\n")
 
