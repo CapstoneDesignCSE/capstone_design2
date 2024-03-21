@@ -22,3 +22,4 @@ code for capstone design
 ## Blog
 - [X] [YOLOv5 커스텀 데이터 학습 - M1 Mac, iphone](https://clap0107.tistory.com/7)
 - [X] [객체 탐지 데이터 셋](https://public.roboflow.com/object-detection)
+- [X] [YOLOv8 객체 속도 측정](https://docs.ultralytics.com/ko/reference/solutions/speed_estimation/)
