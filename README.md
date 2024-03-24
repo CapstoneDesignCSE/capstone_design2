@@ -1,5 +1,5 @@
-# capstone_design2
-code for capstone design 
+# capstone_design2 - Smart Barricade
+![path](assets/images/smart_barricade_teaser.jpeg)
 
 
 
