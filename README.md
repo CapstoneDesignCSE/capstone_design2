@@ -14,7 +14,7 @@
 
 ## 채승민
 - [24.03.17 YoloV8 아이폰 캠 연동 테스트 성공](https://github.com/CapstoneDesignCSE/capstone_design2/issues/3)
-
+- [24.03.24 Supervision 을 활용한 객체 속력 측정 성공]
 
 
 
