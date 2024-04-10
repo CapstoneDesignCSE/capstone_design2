@@ -1,0 +1,1120 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      The system is: Darwin - 23.2.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ld: library 'System' not found
+      clang: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is AppleClang, found in:
+        /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/3.29.1/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ld: library 'c++' not found
+      clang: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is AppleClang, found in:
+        /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/3.29.1/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-wJV7Nf"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-wJV7Nf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-wJV7Nf'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_01c3a/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_01c3a.dir/build.make CMakeFiles/cmTC_01c3a.dir/build
+        Building C object CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeCCompilerABI.c
+        Apple clang version 15.0.0 (clang-1500.1.0.2.5)
+        Target: arm64-apple-darwin23.2.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.2 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-wJV7Nf -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-wJV7Nf -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 15.0.0 (clang-1500.1.0.2.5) default target arm64-apple-darwin23.2.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include
+         /Library/Developer/CommandLineTools/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking C executable cmTC_01c3a
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01c3a.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o -o cmTC_01c3a
+        Apple clang version 15.0.0 (clang-1500.1.0.2.5)
+        Target: arm64-apple-darwin23.2.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o cmTC_01c3a -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld  PROJECT:dyld-1022.1
+        BUILD 13:21:42 Nov 10 2023
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h
+        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.0.12.8)
+        Library search paths:
+        Framework search paths:
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:134 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include]
+          add: [/Library/Developer/CommandLineTools/usr/include]
+        end of search list found
+        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+        implicit include dirs: [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include;/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:170 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-wJV7Nf']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_01c3a/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_01c3a.dir/build.make CMakeFiles/cmTC_01c3a.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.1.0.2.5)]
+        ignore line: [Target: arm64-apple-darwin23.2.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.2 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-wJV7Nf -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-wJV7Nf -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 15.0.0 (clang-1500.1.0.2.5) default target arm64-apple-darwin23.2.0]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_01c3a]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01c3a.dir/link.txt --verbose=1]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o -o cmTC_01c3a]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.1.0.2.5)]
+        ignore line: [Target: arm64-apple-darwin23.2.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o cmTC_01c3a -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+          arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [14.0.0] ==> ignore
+          arg [14.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_01c3a] ==> ignore
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_01c3a.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lSystem] ==> lib [System]
+          arg [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'C': /Library/Developer/CommandLineTools/usr/bin/ld
+        remove lib [System]
+        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:207 (cmake_determine_linker_id)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Running the C compiler's linker: "/Library/Developer/CommandLineTools/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld  PROJECT:dyld-1022.1
+      BUILD 13:21:42 Nov 10 2023
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h
+      will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.0.12.8)
+      Library search paths:
+      Framework search paths:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-UXRoob"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-UXRoob"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-UXRoob'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0726d/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0726d.dir/build.make CMakeFiles/cmTC_0726d.dir/build
+        Building CXX object CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Apple clang version 15.0.0 (clang-1500.1.0.2.5)
+        Target: arm64-apple-darwin23.2.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.2 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-UXRoob -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-UXRoob -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 15.0.0 (clang-1500.1.0.2.5) default target arm64-apple-darwin23.2.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1
+         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include
+         /Library/Developer/CommandLineTools/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_0726d
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0726d.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0726d
+        Apple clang version 15.0.0 (clang-1500.1.0.2.5)
+        Target: arm64-apple-darwin23.2.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o cmTC_0726d -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld  PROJECT:dyld-1022.1
+        BUILD 13:21:42 Nov 10 2023
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h
+        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.0.12.8)
+        Library search paths:
+        Framework search paths:
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:134 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1]
+          add: [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include]
+          add: [/Library/Developer/CommandLineTools/usr/include]
+        end of search list found
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+        implicit include dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1;/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include;/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:170 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-UXRoob']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0726d/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0726d.dir/build.make CMakeFiles/cmTC_0726d.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.1.0.2.5)]
+        ignore line: [Target: arm64-apple-darwin23.2.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.2 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-UXRoob -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-UXRoob -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 15.0.0 (clang-1500.1.0.2.5) default target arm64-apple-darwin23.2.0]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_0726d]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0726d.dir/link.txt --verbose=1]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0726d]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.1.0.2.5)]
+        ignore line: [Target: arm64-apple-darwin23.2.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o cmTC_0726d -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+          arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [14.0.0] ==> ignore
+          arg [14.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_0726d] ==> ignore
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_0726d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'CXX': /Library/Developer/CommandLineTools/usr/bin/ld
+        remove lib [System]
+        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        implicit libs: [c++]
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:207 (cmake_determine_linker_id)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Running the CXX compiler's linker: "/Library/Developer/CommandLineTools/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld  PROJECT:dyld-1022.1
+      BUILD 13:21:42 Nov 10 2023
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h
+      will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.0.12.8)
+      Library search paths:
+      Framework search paths:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lcm-cmake/config.cmake:12 (check_c_compiler_flag)"
+      - "lcm-cmake/config.cmake:59 (lcm_add_c_flags)"
+      - "CMakeLists.txt:17 (include)"
+    checks:
+      - "Performing Test CMAKE_C_COMPILER_SUPPORTS__std_gnu99"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-1UdwR7"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-1UdwR7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_SUPPORTS__std_gnu99"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-1UdwR7'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_03866/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_03866.dir/build.make CMakeFiles/cmTC_03866.dir/build
+        Building C object CMakeFiles/cmTC_03866.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_C_COMPILER_SUPPORTS__std_gnu99  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -std=gnu99 -MD -MT CMakeFiles/cmTC_03866.dir/src.c.o -MF CMakeFiles/cmTC_03866.dir/src.c.o.d -o CMakeFiles/cmTC_03866.dir/src.c.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-1UdwR7/src.c
+        Linking C executable cmTC_03866
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03866.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_03866.dir/src.c.o -o cmTC_03866
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lcm-cmake/config.cmake:12 (check_c_compiler_flag)"
+      - "lcm-cmake/config.cmake:37 (lcm_add_c_flags)"
+      - "lcm-cmake/config.cmake:60 (lcm_add_c_and_cxx_flags)"
+      - "CMakeLists.txt:17 (include)"
+    checks:
+      - "Performing Test CMAKE_C_COMPILER_SUPPORTS__Wall"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-YLVppi"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-YLVppi"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=gnu99"
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_SUPPORTS__Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-YLVppi'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7ffdf/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7ffdf.dir/build.make CMakeFiles/cmTC_7ffdf.dir/build
+        Building C object CMakeFiles/cmTC_7ffdf.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_C_COMPILER_SUPPORTS__Wall  -std=gnu99  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -Wall -MD -MT CMakeFiles/cmTC_7ffdf.dir/src.c.o -MF CMakeFiles/cmTC_7ffdf.dir/src.c.o.d -o CMakeFiles/cmTC_7ffdf.dir/src.c.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-YLVppi/src.c
+        Linking C executable cmTC_7ffdf
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ffdf.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=gnu99  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7ffdf.dir/src.c.o -o cmTC_7ffdf
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lcm-cmake/config.cmake:12 (check_c_compiler_flag)"
+      - "lcm-cmake/config.cmake:37 (lcm_add_c_flags)"
+      - "lcm-cmake/config.cmake:60 (lcm_add_c_and_cxx_flags)"
+      - "CMakeLists.txt:17 (include)"
+    checks:
+      - "Performing Test CMAKE_C_COMPILER_SUPPORTS__Wshadow"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-DlsKwn"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-DlsKwn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=gnu99"
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_SUPPORTS__Wshadow"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-DlsKwn'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ed71e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ed71e.dir/build.make CMakeFiles/cmTC_ed71e.dir/build
+        Building C object CMakeFiles/cmTC_ed71e.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_C_COMPILER_SUPPORTS__Wshadow  -std=gnu99  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -Wshadow -MD -MT CMakeFiles/cmTC_ed71e.dir/src.c.o -MF CMakeFiles/cmTC_ed71e.dir/src.c.o.d -o CMakeFiles/cmTC_ed71e.dir/src.c.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-DlsKwn/src.c
+        Linking C executable cmTC_ed71e
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed71e.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=gnu99  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ed71e.dir/src.c.o -o cmTC_ed71e
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lcm-cmake/config.cmake:12 (check_c_compiler_flag)"
+      - "lcm-cmake/config.cmake:37 (lcm_add_c_flags)"
+      - "lcm-cmake/config.cmake:60 (lcm_add_c_and_cxx_flags)"
+      - "CMakeLists.txt:17 (include)"
+    checks:
+      - "Performing Test CMAKE_C_COMPILER_SUPPORTS__Wuninitialized"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-u74RLL"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-u74RLL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=gnu99"
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_SUPPORTS__Wuninitialized"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-u74RLL'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3f376/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3f376.dir/build.make CMakeFiles/cmTC_3f376.dir/build
+        Building C object CMakeFiles/cmTC_3f376.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_C_COMPILER_SUPPORTS__Wuninitialized  -std=gnu99  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -Wuninitialized -MD -MT CMakeFiles/cmTC_3f376.dir/src.c.o -MF CMakeFiles/cmTC_3f376.dir/src.c.o.d -o CMakeFiles/cmTC_3f376.dir/src.c.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-u74RLL/src.c
+        Linking C executable cmTC_3f376
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f376.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=gnu99  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_3f376.dir/src.c.o -o cmTC_3f376
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lcm-cmake/config.cmake:12 (check_c_compiler_flag)"
+      - "lcm-cmake/config.cmake:37 (lcm_add_c_flags)"
+      - "lcm-cmake/config.cmake:60 (lcm_add_c_and_cxx_flags)"
+      - "CMakeLists.txt:17 (include)"
+    checks:
+      - "Performing Test CMAKE_C_COMPILER_SUPPORTS__Wunused_variable"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-x0hPfe"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-x0hPfe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=gnu99"
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_SUPPORTS__Wunused_variable"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-x0hPfe'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bd01e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bd01e.dir/build.make CMakeFiles/cmTC_bd01e.dir/build
+        Building C object CMakeFiles/cmTC_bd01e.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_C_COMPILER_SUPPORTS__Wunused_variable  -std=gnu99  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -Wunused-variable -MD -MT CMakeFiles/cmTC_bd01e.dir/src.c.o -MF CMakeFiles/cmTC_bd01e.dir/src.c.o.d -o CMakeFiles/cmTC_bd01e.dir/src.c.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-x0hPfe/src.c
+        Linking C executable cmTC_bd01e
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd01e.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=gnu99  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_bd01e.dir/src.c.o -o cmTC_bd01e
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lcm-cmake/config.cmake:12 (check_c_compiler_flag)"
+      - "lcm-cmake/config.cmake:37 (lcm_add_c_flags)"
+      - "lcm-cmake/config.cmake:60 (lcm_add_c_and_cxx_flags)"
+      - "CMakeLists.txt:17 (include)"
+    checks:
+      - "Performing Test CMAKE_C_COMPILER_SUPPORTS__Werror_return_type"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-uT6xbp"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-uT6xbp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=gnu99"
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_SUPPORTS__Werror_return_type"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-uT6xbp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_66d63/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_66d63.dir/build.make CMakeFiles/cmTC_66d63.dir/build
+        Building C object CMakeFiles/cmTC_66d63.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_C_COMPILER_SUPPORTS__Werror_return_type  -std=gnu99  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -Werror=return-type -MD -MT CMakeFiles/cmTC_66d63.dir/src.c.o -MF CMakeFiles/cmTC_66d63.dir/src.c.o.d -o CMakeFiles/cmTC_66d63.dir/src.c.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-uT6xbp/src.c
+        Linking C executable cmTC_66d63
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66d63.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=gnu99  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_66d63.dir/src.c.o -o cmTC_66d63
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lcm-cmake/config.cmake:12 (check_c_compiler_flag)"
+      - "lcm-cmake/config.cmake:37 (lcm_add_c_flags)"
+      - "lcm-cmake/config.cmake:60 (lcm_add_c_and_cxx_flags)"
+      - "CMakeLists.txt:17 (include)"
+    checks:
+      - "Performing Test CMAKE_C_COMPILER_SUPPORTS__Wno_unused_parameter"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-SxZTDT"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-SxZTDT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=gnu99"
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_SUPPORTS__Wno_unused_parameter"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-SxZTDT'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_48f90/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_48f90.dir/build.make CMakeFiles/cmTC_48f90.dir/build
+        Building C object CMakeFiles/cmTC_48f90.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_C_COMPILER_SUPPORTS__Wno_unused_parameter  -std=gnu99  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -Wno-unused-parameter -MD -MT CMakeFiles/cmTC_48f90.dir/src.c.o -MF CMakeFiles/cmTC_48f90.dir/src.c.o.d -o CMakeFiles/cmTC_48f90.dir/src.c.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-SxZTDT/src.c
+        Linking C executable cmTC_48f90
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48f90.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=gnu99  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_48f90.dir/src.c.o -o cmTC_48f90
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lcm-cmake/config.cmake:12 (check_c_compiler_flag)"
+      - "lcm-cmake/config.cmake:37 (lcm_add_c_flags)"
+      - "lcm-cmake/config.cmake:60 (lcm_add_c_and_cxx_flags)"
+      - "CMakeLists.txt:17 (include)"
+    checks:
+      - "Performing Test CMAKE_C_COMPILER_SUPPORTS__Wno_format_zero_length"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-yiCt49"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-yiCt49"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=gnu99"
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_SUPPORTS__Wno_format_zero_length"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-yiCt49'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c20ec/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c20ec.dir/build.make CMakeFiles/cmTC_c20ec.dir/build
+        Building C object CMakeFiles/cmTC_c20ec.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_C_COMPILER_SUPPORTS__Wno_format_zero_length  -std=gnu99  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -Wno-format-zero-length -MD -MT CMakeFiles/cmTC_c20ec.dir/src.c.o -MF CMakeFiles/cmTC_c20ec.dir/src.c.o.d -o CMakeFiles/cmTC_c20ec.dir/src.c.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-yiCt49/src.c
+        Linking C executable cmTC_c20ec
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c20ec.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=gnu99  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c20ec.dir/src.c.o -o cmTC_c20ec
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "lcm-cmake/config.cmake:27 (check_cxx_compiler_flag)"
+      - "lcm-cmake/config.cmake:38 (lcm_add_cxx_flags)"
+      - "lcm-cmake/config.cmake:60 (lcm_add_c_and_cxx_flags)"
+      - "CMakeLists.txt:17 (include)"
+    checks:
+      - "Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wall"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-xpYErv"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-xpYErv"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_SUPPORTS__Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-xpYErv'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f5312/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f5312.dir/build.make CMakeFiles/cmTC_f5312.dir/build
+        Building CXX object CMakeFiles/cmTC_f5312.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_CXX_COMPILER_SUPPORTS__Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -Wall -MD -MT CMakeFiles/cmTC_f5312.dir/src.cxx.o -MF CMakeFiles/cmTC_f5312.dir/src.cxx.o.d -o CMakeFiles/cmTC_f5312.dir/src.cxx.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-xpYErv/src.cxx
+        Linking CXX executable cmTC_f5312
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5312.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f5312.dir/src.cxx.o -o cmTC_f5312
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "lcm-cmake/config.cmake:27 (check_cxx_compiler_flag)"
+      - "lcm-cmake/config.cmake:38 (lcm_add_cxx_flags)"
+      - "lcm-cmake/config.cmake:60 (lcm_add_c_and_cxx_flags)"
+      - "CMakeLists.txt:17 (include)"
+    checks:
+      - "Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wshadow"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-8GNbty"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-8GNbty"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_SUPPORTS__Wshadow"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-8GNbty'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_08f73/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_08f73.dir/build.make CMakeFiles/cmTC_08f73.dir/build
+        Building CXX object CMakeFiles/cmTC_08f73.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_CXX_COMPILER_SUPPORTS__Wshadow  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -Wshadow -MD -MT CMakeFiles/cmTC_08f73.dir/src.cxx.o -MF CMakeFiles/cmTC_08f73.dir/src.cxx.o.d -o CMakeFiles/cmTC_08f73.dir/src.cxx.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-8GNbty/src.cxx
+        Linking CXX executable cmTC_08f73
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08f73.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_08f73.dir/src.cxx.o -o cmTC_08f73
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "lcm-cmake/config.cmake:27 (check_cxx_compiler_flag)"
+      - "lcm-cmake/config.cmake:38 (lcm_add_cxx_flags)"
+      - "lcm-cmake/config.cmake:60 (lcm_add_c_and_cxx_flags)"
+      - "CMakeLists.txt:17 (include)"
+    checks:
+      - "Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wuninitialized"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-sWhrF5"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-sWhrF5"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_SUPPORTS__Wuninitialized"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-sWhrF5'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4159e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4159e.dir/build.make CMakeFiles/cmTC_4159e.dir/build
+        Building CXX object CMakeFiles/cmTC_4159e.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_CXX_COMPILER_SUPPORTS__Wuninitialized  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -Wuninitialized -MD -MT CMakeFiles/cmTC_4159e.dir/src.cxx.o -MF CMakeFiles/cmTC_4159e.dir/src.cxx.o.d -o CMakeFiles/cmTC_4159e.dir/src.cxx.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-sWhrF5/src.cxx
+        Linking CXX executable cmTC_4159e
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4159e.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_4159e.dir/src.cxx.o -o cmTC_4159e
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "lcm-cmake/config.cmake:27 (check_cxx_compiler_flag)"
+      - "lcm-cmake/config.cmake:38 (lcm_add_cxx_flags)"
+      - "lcm-cmake/config.cmake:60 (lcm_add_c_and_cxx_flags)"
+      - "CMakeLists.txt:17 (include)"
+    checks:
+      - "Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wunused_variable"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-ZljLBe"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-ZljLBe"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_SUPPORTS__Wunused_variable"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-ZljLBe'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9a115/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9a115.dir/build.make CMakeFiles/cmTC_9a115.dir/build
+        Building CXX object CMakeFiles/cmTC_9a115.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_CXX_COMPILER_SUPPORTS__Wunused_variable  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -Wunused-variable -MD -MT CMakeFiles/cmTC_9a115.dir/src.cxx.o -MF CMakeFiles/cmTC_9a115.dir/src.cxx.o.d -o CMakeFiles/cmTC_9a115.dir/src.cxx.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-ZljLBe/src.cxx
+        Linking CXX executable cmTC_9a115
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a115.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_9a115.dir/src.cxx.o -o cmTC_9a115
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "lcm-cmake/config.cmake:27 (check_cxx_compiler_flag)"
+      - "lcm-cmake/config.cmake:38 (lcm_add_cxx_flags)"
+      - "lcm-cmake/config.cmake:60 (lcm_add_c_and_cxx_flags)"
+      - "CMakeLists.txt:17 (include)"
+    checks:
+      - "Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Werror_return_type"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-dNcocN"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-dNcocN"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_SUPPORTS__Werror_return_type"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-dNcocN'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9f928/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9f928.dir/build.make CMakeFiles/cmTC_9f928.dir/build
+        Building CXX object CMakeFiles/cmTC_9f928.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_CXX_COMPILER_SUPPORTS__Werror_return_type  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -Werror=return-type -MD -MT CMakeFiles/cmTC_9f928.dir/src.cxx.o -MF CMakeFiles/cmTC_9f928.dir/src.cxx.o.d -o CMakeFiles/cmTC_9f928.dir/src.cxx.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-dNcocN/src.cxx
+        Linking CXX executable cmTC_9f928
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f928.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_9f928.dir/src.cxx.o -o cmTC_9f928
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "lcm-cmake/config.cmake:27 (check_cxx_compiler_flag)"
+      - "lcm-cmake/config.cmake:38 (lcm_add_cxx_flags)"
+      - "lcm-cmake/config.cmake:60 (lcm_add_c_and_cxx_flags)"
+      - "CMakeLists.txt:17 (include)"
+    checks:
+      - "Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wno_unused_parameter"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-1EnfZI"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-1EnfZI"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_SUPPORTS__Wno_unused_parameter"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-1EnfZI'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3a0d4/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3a0d4.dir/build.make CMakeFiles/cmTC_3a0d4.dir/build
+        Building CXX object CMakeFiles/cmTC_3a0d4.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_CXX_COMPILER_SUPPORTS__Wno_unused_parameter  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -Wno-unused-parameter -MD -MT CMakeFiles/cmTC_3a0d4.dir/src.cxx.o -MF CMakeFiles/cmTC_3a0d4.dir/src.cxx.o.d -o CMakeFiles/cmTC_3a0d4.dir/src.cxx.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-1EnfZI/src.cxx
+        Linking CXX executable cmTC_3a0d4
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a0d4.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_3a0d4.dir/src.cxx.o -o cmTC_3a0d4
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "lcm-cmake/config.cmake:27 (check_cxx_compiler_flag)"
+      - "lcm-cmake/config.cmake:38 (lcm_add_cxx_flags)"
+      - "lcm-cmake/config.cmake:60 (lcm_add_c_and_cxx_flags)"
+      - "CMakeLists.txt:17 (include)"
+    checks:
+      - "Performing Test CMAKE_CXX_COMPILER_SUPPORTS__Wno_format_zero_length"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-tiUFzz"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-tiUFzz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_SUPPORTS__Wno_format_zero_length"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-tiUFzz'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_aaabe/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_aaabe.dir/build.make CMakeFiles/cmTC_aaabe.dir/build
+        Building CXX object CMakeFiles/cmTC_aaabe.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_CXX_COMPILER_SUPPORTS__Wno_format_zero_length  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk   -Wno-format-zero-length -MD -MT CMakeFiles/cmTC_aaabe.dir/src.cxx.o -MF CMakeFiles/cmTC_aaabe.dir/src.cxx.o.d -o CMakeFiles/cmTC_aaabe.dir/src.cxx.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-tiUFzz/src.cxx
+        Linking CXX executable cmTC_aaabe
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aaabe.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_aaabe.dir/src.cxx.o -o cmTC_aaabe
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "lcm/CMakeLists.txt:2 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-CikYwP"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-CikYwP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=gnu99 -Wno-format-zero-length"
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-CikYwP'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2f2fb/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2f2fb.dir/build.make CMakeFiles/cmTC_2f2fb.dir/build
+        Building C object CMakeFiles/cmTC_2f2fb.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu99 -Wno-format-zero-length  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -MD -MT CMakeFiles/cmTC_2f2fb.dir/src.c.o -MF CMakeFiles/cmTC_2f2fb.dir/src.c.o.d -o CMakeFiles/cmTC_2f2fb.dir/src.c.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-CikYwP/src.c
+        Linking C executable cmTC_2f2fb
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f2fb.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -std=gnu99 -Wno-format-zero-length  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_2f2fb.dir/src.c.o -o cmTC_2f2fb
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCompilerFlag.cmake:52 (cmake_check_compiler_flag)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/GenerateExportHeader.cmake:238 (check_compiler_flag)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "lcm/CMakeLists.txt:73 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_VISIBILITY"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-cl97V6"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-cl97V6"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-format-zero-length"
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-cl97V6'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4417f/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4417f.dir/build.make CMakeFiles/cmTC_4417f.dir/build
+        Building CXX object CMakeFiles/cmTC_4417f.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -Wno-format-zero-length  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fPIE   -fvisibility=hidden -MD -MT CMakeFiles/cmTC_4417f.dir/src.cxx.o -MF CMakeFiles/cmTC_4417f.dir/src.cxx.o.d -o CMakeFiles/cmTC_4417f.dir/src.cxx.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-cl97V6/src.cxx
+        Linking CXX executable cmTC_4417f
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4417f.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-format-zero-length  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_4417f.dir/src.cxx.o -o cmTC_4417f
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckCompilerFlag.cmake:52 (cmake_check_compiler_flag)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/GenerateExportHeader.cmake:239 (check_compiler_flag)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "lcm/CMakeLists.txt:73 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-258dey"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-258dey"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-format-zero-length"
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-258dey'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_07c1b/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_07c1b.dir/build.make CMakeFiles/cmTC_07c1b.dir/build
+        Building CXX object CMakeFiles/cmTC_07c1b.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -Wno-format-zero-length  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fPIE   -fvisibility-inlines-hidden -MD -MT CMakeFiles/cmTC_07c1b.dir/src.cxx.o -MF CMakeFiles/cmTC_07c1b.dir/src.cxx.o.d -o CMakeFiles/cmTC_07c1b.dir/src.cxx.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-258dey/src.cxx
+        Linking CXX executable cmTC_07c1b
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07c1b.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-format-zero-length  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_07c1b.dir/src.cxx.o -o cmTC_07c1b
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "lcm/CMakeLists.txt:73 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-IPQXoO"
+      binary: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-IPQXoO"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wno-format-zero-length"
+      CMAKE_MODULE_PATH: "/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/Server/lcm-1.5.0/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-IPQXoO'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e6ef2/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e6ef2.dir/build.make CMakeFiles/cmTC_e6ef2.dir/build
+        Building CXX object CMakeFiles/cmTC_e6ef2.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DCOMPILER_HAS_DEPRECATED_ATTR  -Wno-format-zero-length  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fPIE -MD -MT CMakeFiles/cmTC_e6ef2.dir/src.cxx.o -MF CMakeFiles/cmTC_e6ef2.dir/src.cxx.o.d -o CMakeFiles/cmTC_e6ef2.dir/src.cxx.o -c /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-IPQXoO/src.cxx
+        /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-IPQXoO/src.cxx:2:25: warning: 'somefunc' is deprecated [-Wdeprecated-declarations]
+            int main() { return somefunc();}
+                                ^
+        /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/CMakeFiles/CMakeScratch/TryCompile-IPQXoO/src.cxx:1:16: note: 'somefunc' has been explicitly marked deprecated here
+        __attribute__((__deprecated__)) int somefunc() { return 0; }
+                       ^
+        1 warning generated.
+        Linking CXX executable cmTC_e6ef2
+        /opt/homebrew/Cellar/cmake/3.29.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6ef2.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wno-format-zero-length  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e6ef2.dir/src.cxx.o -o cmTC_e6ef2
+        
+      exitCode: 0
+...
