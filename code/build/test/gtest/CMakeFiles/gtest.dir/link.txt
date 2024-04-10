@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -Wno-format-zero-length -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -dynamiclib -Wl,-headerpad_max_install_names -o libgtest.dylib -install_name /Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/build/test/gtest/libgtest.dylib "CMakeFiles/gtest.dir/src/gtest-all.cc.o"

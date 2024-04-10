@@ -1,7 +1,8 @@
 # capstone_design2 - Smart Barricade
 ![path](assets/images/smart_barricade_teaser.jpeg)
 
-
+# 프로젝트 아키텍쳐
+![path](assets/images/Smart_Barricade_V1.png)
 
 # 날짜 별 진행 사항
 <!-- - [제목](이슈 링크) 형태로 작성하시면 됩니다. -->
@@ -17,6 +18,7 @@
 ## 채승민
 - [24.03.17 YoloV8 아이폰 캠 연동 테스트 성공](https://github.com/CapstoneDesignCSE/capstone_design2/issues/3)
 - [24.03.24 Supervision 을 활용한 객체 속력 측정 성공]
+- [24.04.10 프로젝트 아키텍쳐 구축]
 
 
 
