@@ -10,7 +10,8 @@
 ## 조민제
 - [24.03.16 YoloV8을 이용한 CCTV 영상속 차량탐지 성공, resizing또한 정상적으로 적용됨.]
 - [24.04.03 모터 첫 가동 성공]  
-- [24.04.09 라즈베리파이를 이용한 아두이노로 모터 제어 성공](https://github.com/CapstoneDesignCSE/capstone_design2/issues/4)  
+- [24.04.09 라즈베리파이를 이용한 아두이노로 모터 제어 성공](https://github.com/CapstoneDesignCSE/capstone_design2/issues/4)
+- [24.04.14 YOLOv8을 이용하여 속도측정 성공, (빠른 처리가 가능)](https://github.com/CapstoneDesignCSE/capstone_design2/issues/5)
 ## 김시온
 
 ## 송도현
