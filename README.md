@@ -42,3 +42,4 @@
 ## Youtube
 ### 속도 측정
 - [X] [객체 속도 측정 - Roboflow](https://youtu.be/uWP6UjDeZvY)
+- [X] [YOLOv8을 이용한 실시간 차량탐지와 속도측정](https://youtu.be/eAjO0wlmNL0)
