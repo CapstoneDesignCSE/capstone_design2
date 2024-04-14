@@ -1,0 +1,7 @@
+struct vehicle {
+    int64_t timestamp;
+    string vehicle_id;
+    string vehicle_category; // 차종
+    string vehicle_type; // 소형, 중형, 대형
+    int64_t speed;
+}

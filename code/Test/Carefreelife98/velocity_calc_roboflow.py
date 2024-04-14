@@ -3,10 +3,9 @@ from collections import *
 
 import cv2
 import numpy as np
-import supervision
+import supervision as sv
 from inference.models.utils import get_roboflow_model
 
-import supervision as sv
 
 # detection 되는 객체 중 멀리 떨어진 객체에 대한 detection 세밀화 (탐색 위치 지정: 빨간 박스)
 # [[좌 하단], [우 하단], [우 상단], [좌 상단]]
@@ -130,7 +129,7 @@ if __name__ == "__main__":
         annotated_frame = frame.copy()
 
         # 멀리 떨어진 객체 인식 세밀화를 위한 polygon zone 을 annotated_frame 에 추가.
-        annotated_frame = sv.draw_polygon(annotated_frame, polygon=SOURCE, color=supervision.Color.RED)
+        annotated_frame = sv.draw_polygon(annotated_frame, polygon=SOURCE, color=sv.Color.RED)
         annotated_frame = bounding_box_annotator.annotate(
             scene=annotated_frame, detections=detections
         )
