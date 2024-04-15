@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/cc  -std=gnu99 -Wno-format-zero-length -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names "CMakeFiles/lcm-logplayer.dir/lcm_logplayer.c.o" -o lcm-logplayer  ../lcm/liblcm.1.5.0.dylib /opt/homebrew/lib/libglib-2.0.dylib
