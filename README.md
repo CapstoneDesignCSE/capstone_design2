@@ -20,6 +20,7 @@
 - [24.03.17 YoloV8 아이폰 캠 연동 테스트 성공](https://github.com/CapstoneDesignCSE/capstone_design2/issues/3)
 - [24.03.24 Supervision 을 활용한 객체 속력 측정 성공]
 - [24.04.10 프로젝트 아키텍쳐 구축]
+- [24.04.22 Docker 사용한 Kafka Messaging Queue 사용 테스트 성공](https://carefreelife98.github.io/inu-capstone/capstone-docker-kafka-intro/)
 
 
 
