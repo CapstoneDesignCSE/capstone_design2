@@ -2,13 +2,20 @@ import datetime
 import cv2
 import pandas as pd
 import numpy as np
+import boto3
 
 import code.Server.producer
+import code.SmartBarricade.aws.awsS3Connect as aws
 from tracker import Tracker
 from ultralytics import YOLO
 
 
 class CarDetectionByCam:
+
+    # OpenCV를 사용하여 탐지된 객체 이미지 추출 및 로컬에 저장
+    def save_detected_object_image(self, frame, x1, y1, x2, y2, image_name):
+        detected_object = frame[y1:y2, x1:x2]
+        cv2.imwrite(image_name, detected_object)
 
     # 객체 탐지 결과 신뢰성 60% 이상으로 설정
     CONFIDENCE_THRESHOLD = 0.6
@@ -106,17 +113,25 @@ class CarDetectionByCam:
                 previous_positions[id] = ((cx, cy), frame_count)
 
             if id in speeds:
+                # 탐지된 객체 이미지 저장
+                image_name = f'detected_object_{id}.jpg'
+                save_detected_object_image(frame, x1, y1, x2, y2, image_name)
+                # 이미지를 S3에 업로드
+                aws.upload_to_aws(image_name, f'detected_objects/{image_name}')
                 # Draw bbox
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                label = int(data[5])
                 # Display speed
-                cv2.putText(frame, f"ID: {id} Speed: {speeds[id]:.2f} km/h", (x1, y2 - 10), cv2.FONT_HERSHEY_COMPLEX,
+                cv2.putText(frame, f"ID: {id} Class: {class_list[label]} Speed: {speeds[id]:.2f} km/h", (x1, y2 - 10), cv2.FONT_HERSHEY_COMPLEX,
                             0.5,
                             (0, 255, 0), 2)
 
                 # [Kafka Message 발행] Topic: Smart-Barricade
+                current_time = datetime.datetime.now()
                 kafka_json_data = {
                     "id": str(id),
-                    "speed": f"{speeds[id]:.2f}"
+                    "speed": f"{speeds[id]:.2f}",
+                    "pub_dt": current_time.strftime('%Y-%m-%d %H:%M:%S')
                 }
                 message_producer.send_message(kafka_json_data)
 

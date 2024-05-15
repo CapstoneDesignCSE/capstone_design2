@@ -10,7 +10,7 @@ model = YOLO('yolov8s.pt')
 
 # 다운로드한 동영상 파일 경로
 #video_path = 'sample.mp4'
-video_path = 'sample2.mp4'
+video_path = '../DataSet/testCase2.mp4'
 # CamGear를 사용하여 동영상 스트리밍 시작
 stream = CamGear(source=video_path).start()
 
