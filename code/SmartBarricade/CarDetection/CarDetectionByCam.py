@@ -3,7 +3,6 @@ import cv2
 import pandas as pd
 import numpy as np
 import boto3
-
 import code.Server.producer
 import code.SmartBarricade.aws.awsS3Connect as aws
 from tracker import Tracker
@@ -13,8 +12,9 @@ from ultralytics import YOLO
 class CarDetectionByCam:
 
     # OpenCV를 사용하여 탐지된 객체 이미지 추출 및 로컬에 저장
-    def save_detected_object_image(self, frame, x1, y1, x2, y2, image_name):
+    def save_detected_object_image(frame, x1, y1, x2, y2, image_name):
         detected_object = frame[y1:y2, x1:x2]
+        print(image_name)
         cv2.imwrite(image_name, detected_object)
 
     # 객체 탐지 결과 신뢰성 60% 이상으로 설정
@@ -113,16 +113,22 @@ class CarDetectionByCam:
                 previous_positions[id] = ((cx, cy), frame_count)
 
             if id in speeds:
-                # 탐지된 객체 이미지 저장
-                image_name = f'detected_object_{id}.jpg'
-                save_detected_object_image(frame, x1, y1, x2, y2, image_name)
-                # 이미지를 S3에 업로드
-                aws.upload_to_aws(image_name, f'detected_objects/{image_name}')
+                uploaded_url = ''
+                if speeds[id] > 30:
+                    pass
+                    # # 탐지된 객체 이미지 local 저장
+                    # image_name_local = f"../../../assets/detectedImages/detected_object_{id}.jpg"
+                    # save_detected_object_image(frame, x1, y1, x2, y2, image_name_local)
+                    #
+                    # image_name = f"smart_barricade_detected_objects/detected_object_{id}.jpg"
+                    # # local 저장된 이미지를 S3에 업로드
+                    # uploaded_url = aws.upload_to_aws(image_name_local, image_name)
+
                 # Draw bbox
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
-                label = int(data[5])
+
                 # Display speed
-                cv2.putText(frame, f"ID: {id} Class: {class_list[label]} Speed: {speeds[id]:.2f} km/h", (x1, y2 - 10), cv2.FONT_HERSHEY_COMPLEX,
+                cv2.putText(frame, f"ID: {id} Speed: {speeds[id]:.2f} km/h", (x1, y2 - 10), cv2.FONT_HERSHEY_COMPLEX,
                             0.5,
                             (0, 255, 0), 2)
 
@@ -131,6 +137,7 @@ class CarDetectionByCam:
                 kafka_json_data = {
                     "id": str(id),
                     "speed": f"{speeds[id]:.2f}",
+                    "uploaded_url": uploaded_url,
                     "pub_dt": current_time.strftime('%Y-%m-%d %H:%M:%S')
                 }
                 message_producer.send_message(kafka_json_data)
@@ -139,27 +146,6 @@ class CarDetectionByCam:
         cv2.rectangle(frame, (roi_x, roi_y), (roi_x + roi_w, roi_y + roi_h), (255, 0, 0), 2)  # ROI in blue
         frame_count += 1
         cv2.imshow("RGB", frame)
-
-        # for data in detection.boxes.data.tolist():  # data : [xmin, ymin, xmax, ymax, confidence_score, class_id]
-        #     confidence = float(data[4])
-        #     if confidence < CONFIDENCE_THRESHOLD:
-        #         continue
-        #
-        #     xmin, ymin, xmax, ymax = int(data[0]), int(data[1]), int(data[2]), int(data[3])
-        #     label = int(data[5])
-        #     cv2.rectangle(frame, (xmin, ymin), (xmax, ymax), GREEN, 2)
-        #     cv2.putText(frame, class_list[label] + ' ' + str(round(confidence, 2)) + '%', (xmin, ymin), cv2.FONT_ITALIC,
-        #                 1, WHITE, 2)
-        #
-        # end = datetime.datetime.now()
-        #
-        # total = (end - start).total_seconds()
-        # print(f'Time to process 1 frame: {total * 1000:.0f} milliseconds')
-        #
-        # fps = f'FPS: {1 / total:.2f}'
-        # cv2.putText(frame, fps, (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
-        #
-        # cv2.imshow('frame', frame)
 
         if cv2.waitKey(1) == ord('q'):
             break
