@@ -1,8 +1,5 @@
 from kafka import KafkaProducer
 import json
-import time
-from csv import reader
-
 
 class MessageProducer:
     broker = ""
@@ -29,13 +26,3 @@ class MessageProducer:
         except Exception as e:
             print("error:::::",e)
             return e
-
-# # 브로커와 토픽명을 지정한다.
-# broker = 'localhost:9092'
-# topic = 'new-topic'
-# message_producer = MessageProducer(broker, topic)
-
-# with open('test/'+topic+'.txt', 'r', encoding='utf-8') as file:
-#     for data in file:
-#         print("send-data: ", data)
-#         res = message_producer.send_message(data)

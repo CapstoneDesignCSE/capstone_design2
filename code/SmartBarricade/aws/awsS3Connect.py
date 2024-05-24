@@ -3,7 +3,7 @@ from botocore.exceptions import NoCredentialsError
 import yaml
 
 # YAML 파일 읽기
-with open("secret.yaml", 'r') as file:
+with open("/Users/carefreelife/Desktop/INU/2024_5_1/capstone_design2/code/SmartBarricade/aws/secret.yaml", 'r') as file:
     config = yaml.safe_load(file)
 
 # AWS 자격 증명 및 S3 클라이언트 설정
