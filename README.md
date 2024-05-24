@@ -2,7 +2,7 @@
 ![path](assets/images/smart_barricade_teaser.jpeg)
 
 # 프로젝트 아키텍쳐
-![path](assets/images/Smart_Barricade_V1.png)
+![path](assets/images/Smart_Barricade_V2.PNG)
 
 # 날짜 별 진행 사항
 <!-- - [제목](이슈 링크) 형태로 작성하시면 됩니다. -->
