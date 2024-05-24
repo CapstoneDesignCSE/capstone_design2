@@ -2,7 +2,7 @@ import cv2
 import cvzone
 from ultralytics import YOLO
 from ultralytics.solutions import speed_estimation
-from code.SmartBarricade.CarDetection.tracker import Tracker
+from code.smart_barricade.car_detection.tracker import Tracker
 import pandas as pd
 
 # YOLO 모델 초기화

@@ -6,7 +6,7 @@ import code.Server.producer
 
 from ultralytics import YOLO
 from vidgear.gears import CamGear
-from code.SmartBarricade.CarDetection.tracker import Tracker
+from code.smart_barricade.car_detection.tracker import Tracker
 
 
 previous_positions = {}
@@ -16,7 +16,7 @@ speeds = {}
 frame_count = 0
 scaling_factor = 0.06  # 픽셀당 실제 거리(미터)로 변경
 class CarDetectionByVideo:
-    model = YOLO('../Model/yolov8s.pt')
+    model = YOLO('../model/yolov8s.pt')
     model.classes = [0, 1, 2, 3, 5, 7]
     broker = 'localhost:9092'
     topic = 'Smart-Barricade'

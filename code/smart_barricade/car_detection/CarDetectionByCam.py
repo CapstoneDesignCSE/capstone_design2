@@ -4,9 +4,9 @@ from pathlib import Path
 import cv2
 import pandas as pd
 import numpy as np
-import boto3
 import code.Server.producer
-import code.SmartBarricade.aws.awsS3Connect as aws
+import code.smart_barricade.aws.awsS3Connect as aws
+import code.smart_barricade.client.motor as mc
 from tracker import Tracker
 from ultralytics import YOLO
 
@@ -48,7 +48,7 @@ Description:
 class CarDetectionByCam:
     def __init__(self):
         # YOLO 모델을 정의
-        self.model = YOLO('../Model/yolov8n.pt')
+        self.model = YOLO('../model/yolov8n.pt')
 
         # Streaming Data 정의
         video_mode = int(
@@ -75,7 +75,7 @@ class CarDetectionByCam:
         self.fps = self.cap.get(cv2.CAP_PROP_FPS)
 
         # Data Set 정의
-        self.class_list = Path('../../DataSet/coco2.txt').read_text().split('\n')
+        self.class_list = Path('../../DataSet/coco.txt').read_text().split('\n')
 
         # 관심 영역 (ROI 정의)
         # Default: 75, 75, 1000, 700
@@ -87,6 +87,7 @@ class CarDetectionByCam:
         self.previous_positions = {}
         self.previous_widths = {}
         self.speeds = {}
+        self.type = {}
         self.frame_count = 0
         self.scaling_factor = 0.02
 
@@ -108,6 +109,7 @@ class CarDetectionByCam:
             f"previous_positions={self.previous_positions}, "
             f"previous_widths={self.previous_widths}, "
             f"speeds={self.speeds}, "
+            f"type={self.type}, "
             f"frame_count={self.frame_count}, "
             f"scaling_factor={self.scaling_factor}, "
             f"broker={self.broker}, "
@@ -131,6 +133,9 @@ class CarDetectionByCam:
         return speed_mps * 3.6
 
     def run(self):
+        # MotorClient 인스턴스 생성
+        # motor_client = mc.MotorClient()
+
         # 스트리밍 시작
         while True:
             start = datetime.datetime.now()
@@ -151,7 +156,13 @@ class CarDetectionByCam:
             cars = []
 
             for index, row in px.iterrows():
-                if 'car' or 'bus' or 'truck' in self.class_list[int(row[5])]:
+                obj_type = self.class_list[int(row[5])]
+                if 'person' in obj_type:
+                    # 사람 발견 시 최대 각도로 바리케이드 작동.
+                    pass
+                    # motor_client.send_data_to_motor(100, f'{obj_type}')
+
+                if obj_type in ['car', 'bus', 'truck']:
                     x1, y1, x2, y2 = int(row[0]), int(row[1]), int(row[2]), int(row[3])
                     width = x2 - x1
                     height = y2 - y1
@@ -161,10 +172,10 @@ class CarDetectionByCam:
                     x2 += self.roi_x
                     y2 += self.roi_y
 
-                    # Only pass x, y, width, height to the tracker
-                    cars.append([x1, y1, width, height])  # Update here
+                    # x, y, width, height, 만을 트래커에 전달
+                    cars.append([x1, y1, width, height])
 
-            # 탐지 객체 속도 측정
+            # 트래커를 업데이트 하여 탐지된 객체의 속도 측정
             bbox_id = self.tracker.update(cars)
             for bbox in bbox_id:
                 x1, y1, w, h, id = bbox
@@ -184,9 +195,10 @@ class CarDetectionByCam:
                     self.previous_positions[id] = ((cx, cy), self.frame_count)
 
                 if id in self.speeds:
+                    # motor_client.send_data_to_motor(self.speeds[id], obj_type)
+
                     uploaded_url = ''
                     if self.speeds[id] > 30:
-                        # pass
                         # 탐지된 객체 이미지 local 저장
                         image_name_local = f"../../../assets/detectedImages/detected_object_{id}.jpg"
                         self.save_detected_object_image(frame, x1, y1, x2, y2, image_name_local)
@@ -212,6 +224,7 @@ class CarDetectionByCam:
                     current_time = datetime.datetime.now()
                     kafka_json_data = {
                         "id": str(id),
+                        "type": obj_type,
                         "speed": f"{self.speeds[id]:.2f}",
                         "uploaded_url": uploaded_url,
                         "pub_dt": current_time.strftime('%Y-%m-%d %H:%M:%S')
